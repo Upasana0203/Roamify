@@ -1,0 +1,31 @@
+<% layout("/layouts/boilerplate")%>
+
+         <div class="row mt-3">
+         <div class="col-8 offset-2">
+
+        <h3>Book a Listing</h3>
+        <form method="POST" action="/listings/<%= listing._id %>/book/submit" novalidate  class="needs-validation" >
+      
+        <div class="mb-3"> 
+            <label for="sdate"  class="form-label">Enter Starting Date</label>
+        <input type="date" name="sdate" class="form-control"  required>
+        </div>
+       
+      <div class="mb-3"> 
+        <label for="edate" class="form-label">Enter Ending Date</label>
+      <input type="date" name="edate"class="form-control"  required>
+      </div>
+      
+        
+  <div class="mb-3"> 
+  <label for="number" class="form-label">Number of people</label>
+  <input type="number" name="number" class="form-control"  required>
+  </div>
+       
+ <button class="btn btn-dark edit-btn mt-3 mb-3">Book</button>
+    </form>
+   
+     </div>
+    </div>
+
+    
